@@ -1,0 +1,11 @@
+rootProject.name = 'Pattens1'
+include 'src'
+include 'src:test:data'
+findProject(':src:test:data')?.name = 'data'
+include 'src'
+include 'src:test:data'
+findProject(':src:test:data')?.name = 'data'
+include 'src:test'
+findProject(':src:test')?.name = 'test'
+include 'src'
+
